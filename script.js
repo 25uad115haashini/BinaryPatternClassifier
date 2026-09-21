@@ -59,8 +59,7 @@ function classifyPattern() {
 
     let classification = "Pattern Not Recognized ❌";
 
-
-    // PLUS
+    // 1. PLUS
     if (
         rows[0] === "00100" &&
         rows[1] === "01110" &&
@@ -71,8 +70,7 @@ function classifyPattern() {
         classification = "PLUS Pattern ✅";
     }
 
-
-    // X
+    // 2. X
     else if (
         rows[0] === "10001" &&
         rows[1] === "01010" &&
@@ -83,8 +81,7 @@ function classifyPattern() {
         classification = "X Pattern ✅";
     }
 
-
-    // SQUARE
+    // 3. SQUARE
     else if (
         rows[0] === "11111" &&
         rows[1] === "10001" &&
@@ -95,8 +92,7 @@ function classifyPattern() {
         classification = "SQUARE Pattern ✅";
     }
 
-
-    // VERTICAL LINE
+    // 4. VERTICAL LINE
     else if (
         rows[0] === "00100" &&
         rows[1] === "00100" &&
@@ -107,6 +103,71 @@ function classifyPattern() {
         classification = "VERTICAL LINE Pattern ✅";
     }
 
+    // 5. HORIZONTAL LINE
+    else if (
+        rows[0] === "00000" &&
+        rows[1] === "00000" &&
+        rows[2] === "11111" &&
+        rows[3] === "00000" &&
+        rows[4] === "00000"
+    ) {
+        classification = "HORIZONTAL LINE Pattern ✅";
+    }
+
+    // 6. DIAGONAL LINE ↘
+    else if (
+        rows[0] === "10000" &&
+        rows[1] === "01000" &&
+        rows[2] === "00100" &&
+        rows[3] === "00010" &&
+        rows[4] === "00001"
+    ) {
+        classification = "DIAGONAL ↘ Pattern ✅";
+    }
+
+    // 7. DIAGONAL LINE ↙
+    else if (
+        rows[0] === "00001" &&
+        rows[1] === "00010" &&
+        rows[2] === "00100" &&
+        rows[3] === "01000" &&
+        rows[4] === "10000"
+    ) {
+        classification = "DIAGONAL ↙ Pattern ✅";
+    }
+
+    // 8. T PATTERN
+    else if (
+        rows[0] === "11111" &&
+        rows[1] === "00100" &&
+        rows[2] === "00100" &&
+        rows[3] === "00100" &&
+        rows[4] === "00100"
+    ) {
+        classification = "T Pattern ✅";
+    }
+
+    // 9. L PATTERN
+    else if (
+        rows[0] === "10000" &&
+        rows[1] === "10000" &&
+        rows[2] === "10000" &&
+        rows[3] === "10000" &&
+        rows[4] === "11111"
+    ) {
+        classification = "L Pattern ✅";
+    }
+
+    // 10. H PATTERN
+    else if (
+        rows[0] === "10001" &&
+        rows[1] === "10001" &&
+        rows[2] === "11111" &&
+        rows[3] === "10001" &&
+        rows[4] === "10001"
+    ) {
+        classification = "H Pattern ✅";
+    }
 
     result.textContent = "Classification Result: " + classification;
 
