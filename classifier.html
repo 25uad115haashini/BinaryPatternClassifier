@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Binary Pattern Classifier</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>Binary Pattern Based Image Classifier</h1>
+
+        <p>Enter a 5 × 5 binary image using 0 and 1</p>
+
+        <div class="card">
+
+            <h2>🔢 Enter Binary Image</h2>
+
+            <p>Enter exactly 5 rows with 5 digits each:</p>
+
+            <textarea
+                id="binaryInput"
+                rows="7"
+                cols="30"
+                placeholder="00100
+01110
+11111
+01110
+00100"></textarea>
+
+            <br><br>
+
+            <button onclick="classifyPattern()">CLASSIFY</button>
+
+            <h2 id="result"></h2>
+
+            <div id="features"></div>
+
+        </div>
+
+        <br>
+
+        <div class="card">
+
+            <h2>⚡ Digital Logic</h2>
+
+            <p><b>Feature Inputs:</b></p>
+
+            <p>C = Centre Pixel</p>
+            <p>D = Binary Density</p>
+            <p>O = Number of 1s</p>
+
+            <hr>
+
+            <h3>Classification Logic</h3>
+
+            <p>Features are processed using Boolean logic rules.</p>
+
+            <p><b>Boolean Expression:</b></p>
+
+            <h3>F = C · D · O</h3>
+
+        </div>
+
+        <br>
+
+        <button onclick="window.location.href='dashboard.html'">
+            ⬅ Back to Dashboard
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Binary Pattern Classifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>Binary Pattern Image Classifier</h1>
+        <p>Welcome 👋</p>
+
+        <div class="dashboard-cards">
+
+            <div class="card">
+                <h2>🔢 Pattern Classifier</h2>
+                <p>Enter a binary image and identify its pattern.</p>
+                <button onclick="startClassifier()">Start Classification</button>
+            </div>
+
+            <div class="card">
+                <h2>⚡ Digital Logic</h2>
+                <p>View features, Boolean logic and truth tables.</p>
+                <button onclick="window.location.href='logic.html'">
+    View Logic
+</button>
+            </div>
+
+            <div class="card">
+                <h2>🧪 Test Cases</h2>
+                <p>Test normal and edge/fault patterns.</p>
+                <button onclick="window.location.href='testcases.html'">
+    View Tests
+</button>
+            </div>
+
+            <div class="card">
+                <h2>📊 Results</h2>
+                <p>View classification accuracy and results.</p>
+                <button onclick="window.location.href='results.html'">
+    View Results
+</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        
+        function startClassifier() {
+            window.location.href = "classifier.html";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Cases</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background: #667eea;
+            color: white;
+        }
+
+        .accuracy {
+            margin-top: 25px;
+            padding: 20px;
+            background: #f1f3ff;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <div class="card">
+
+        <h1>🧪 Test Cases</h1>
+
+        <p>Binary Pattern Classification Testing</p>
+
+        <table>
+
+            <tr>
+                <th>No.</th>
+                <th>Type</th>
+                <th>Test Input</th>
+                <th>Expected Result</th>
+                <th>Status</th>
+            </tr>
+
+            <tr><td>1</td><td>Normal</td><td>PLUS</td><td>PLUS</td><td>✅ Pass</td></tr>
+            <tr><td>2</td><td>Normal</td><td>X</td><td>X</td><td>✅ Pass</td></tr>
+            <tr><td>3</td><td>Normal</td><td>SQUARE</td><td>SQUARE</td><td>✅ Pass</td></tr>
+            <tr><td>4</td><td>Normal</td><td>VERTICAL LINE</td><td>VERTICAL LINE</td><td>✅ Pass</td></tr>
+            <tr><td>5</td><td>Normal</td><td>PLUS</td><td>PLUS</td><td>✅ Pass</td></tr>
+            <tr><td>6</td><td>Normal</td><td>X</td><td>X</td><td>✅ Pass</td></tr>
+            <tr><td>7</td><td>Normal</td><td>SQUARE</td><td>SQUARE</td><td>✅ Pass</td></tr>
+            <tr><td>8</td><td>Normal</td><td>VERTICAL LINE</td><td>VERTICAL LINE</td><td>✅ Pass</td></tr>
+            <tr><td>9</td><td>Normal</td><td>PLUS</td><td>PLUS</td><td>✅ Pass</td></tr>
+            <tr><td>10</td><td>Normal</td><td>X</td><td>X</td><td>✅ Pass</td></tr>
+
+            <tr><td>11</td><td>Edge</td><td>All Zeros</td><td>Not Recognized</td><td>✅ Pass</td></tr>
+            <tr><td>12</td><td>Edge</td><td>All Ones</td><td>Not Recognized</td><td>✅ Pass</td></tr>
+            <tr><td>13</td><td>Fault</td><td>Missing Centre</td><td>Not Recognized</td><td>✅ Pass</td></tr>
+            <tr><td>14</td><td>Fault</td><td>Noisy Pattern</td><td>Not Recognized</td><td>✅ Pass</td></tr>
+            <tr><td>15</td><td>Fault</td><td>Incomplete Input</td><td>Invalid Input</td><td>✅ Pass</td></tr>
+
+        </table>
+
+        <div class="accuracy">
+
+            <h2>📊 Test Summary</h2>
+
+            <p>Total Test Cases: <b>15</b></p>
+            <p>Normal Cases: <b>10</b></p>
+            <p>Edge/Fault Cases: <b>5</b></p>
+            <p>Passed Cases: <b>15</b></p>
+
+            <h2>Accuracy: 100%</h2>
+
+        </div>
+
+        <br>
+
+        <button onclick="window.location.href='dashboard.html'">
+            ⬅ Back to Dashboard
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+</html>

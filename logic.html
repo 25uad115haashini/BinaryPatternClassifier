@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Logic</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <div class="card">
+
+        <h1>⚡ Digital Logic</h1>
+
+        <p>Binary Pattern Classification using Digital Logic</p>
+
+        <hr>
+
+        <h2>🔍 Feature Inputs</h2>
+
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Meaning</th>
+            </tr>
+
+            <tr>
+                <td>C</td>
+                <td>Centre Pixel</td>
+            </tr>
+
+            <tr>
+                <td>H</td>
+                <td>Horizontal Symmetry</td>
+            </tr>
+
+            <tr>
+                <td>V</td>
+                <td>Vertical Symmetry</td>
+            </tr>
+
+            <tr>
+                <td>O</td>
+                <td>Number of 1s</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h2>📋 Truth Table</h2>
+
+        <table>
+            <tr>
+                <th>C</th>
+                <th>H</th>
+                <th>V</th>
+                <th>Decision</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>Symmetric Pattern</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>Not Recognized</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>Not Recognized</td>
+            </tr>
+
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>Not Recognized</td>
+            </tr>
+
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>Not Recognized</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h2>Boolean Expression</h2>
+
+        <h3>F = C · H · V</h3>
+
+        <p>
+            The output becomes 1 when the centre pixel,
+            horizontal symmetry and vertical symmetry are all 1.
+        </p>
+
+        <br>
+
+        <button onclick="window.location.href='dashboard.html'">
+            ⬅ Back to Dashboard
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
